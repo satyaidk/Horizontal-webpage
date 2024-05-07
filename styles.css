@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.center {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.content {
+    width: 100vh;
+    height: 100vw;
+    position: relative;
+    transform-origin: left top;
+    transform: rotateZ(-90deg)
+    translateX(-100%);
+    overflow: auto;
+
+}
+.nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    mix-blend-mode: difference;
+}
+.logo {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translate(0, -50%)
+    rotate(90deg);
+    font-family: "Honk", system-ui;
+    font-size: 20px;
+    font-weight: 600;
+}
+.title {
+    font-size: 16px;
+    font-family: "Honk", system-ui;
+    margin: 0 20px;
+    cursor: pointer;
+}
+.page {
+    width: 100vh;
+    height: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Honk", system-ui;
+    font-size: 60px;
+    background: white;
+    color: black;
+}
+.page-content {
+    transform: rotate(90deg);
+    overflow: hidden;
+}           
+.content::-webkit-scrollbar {
+    display: none;
+}
+.page:nth-child(even) {
+    background: black;
+    color: white;
+}
